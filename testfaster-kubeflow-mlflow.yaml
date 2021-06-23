@@ -1,0 +1,13 @@
+version: "0.1"
+modules:
+  # The modules get terraform-applied in order, with the outputs from each
+  # being passed into the inputs to the next. It is up to the module authors to
+  # ensure the inputs & outputs match up in such a way that they are mutually
+  # compatible.
+  # Values that users specify as secrets in the Combinator UI are passed
+  # into all modules as environment variables with the convention
+  # TF_secretname.
+  - eks:
+      repo: https://github.com/combinator-ml/terraform-testfaster-kubernetes
+  - kubeflow-mlflow:
+      repo: https://github.com/combinator-ml/terraform-stack-kubeflow-mlflow-kubernetes
