@@ -10,4 +10,4 @@ modules:
   - eks:
       repo: https://github.com/combinator-ml/terraform-testfaster-kubernetes
   - kubeflow-mlflow:
-      repo: https://github.com/combinator-ml/terraform-stack-kubeflow-mlflow-kubernetes
+      repo: https://github.com/combinator-ml/terraform-k8s-stack-kubeflow-mlflow
