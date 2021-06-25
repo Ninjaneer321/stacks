@@ -1,0 +1,6 @@
+version: "0.1"
+modules:
+  - eks:
+      repo: https://github.com/combinator-ml/terraform-testfaster-kubernetes
+  - seldon:
+      repo: https://github.com/combinator-ml/terraform-k8s-seldon
