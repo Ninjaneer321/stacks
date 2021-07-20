@@ -1,0 +1,6 @@
+# Install just MLflow onto an existing k8s cluster.
+
+apiVersion: combinator.ml/v1alpha1
+modules:
+  - name: mlflow
+    repo: https://github.com/combinator-ml/terraform-k8s-mlflow
